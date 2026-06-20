@@ -1,0 +1,146 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#container {
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 40px;
+}
+.bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 25px;
+    background-color: #3b82f6;
+    border-radius: 4px 4px 0 0;
+}
+#stats{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#info{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#info h2{
+    color: #60a5fa;
+}
+
+#info ul{
+    padding-left: 20px;
+}
+#info-container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.card{
+    flex: 1;
+    background: #111827;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #1f2937;
+}
+
+.card h2{
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.card p{
+    color: #d1d5db;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 15px;
+    border-bottom: 1px solid #374151;
+    color: white;
+}
+#legend{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    color: white;
+}
+
+.legend-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.blue{
+    background: #3b82f6;
+}
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}

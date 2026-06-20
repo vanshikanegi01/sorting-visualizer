@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SORTING VISUALISER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SORTING VISUALISER</h1>
+    <div class="controls">
+        <button id="generate">Generate Array</button>
+        <button id="sort">Sort</button>
+        <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        </select>
+        <label>Speed:</label>
+        <input type="range" id="speed" min="10" max="500" value="100">
+        <label>
+    Size: <span id="sizeValue">20</span>
+</label>
+
+<input type="range" id="size" min="5" max="50" value="20">
+    </div>
+    <div id="legend">
+
+    <div class="legend-item">
+        <span class="box blue"></span>
+        Unsorted
+    </div>
+
+    <div class="legend-item">
+        <span class="box red"></span>
+        Currently Comparing
+    </div>
+
+    <div class="legend-item">
+        <span class="box green"></span>
+        Sorted
+    </div>
+
+</div>
+
+    <div id="container"></div>
+    <div id="stats">
+
+    <p>Comparisons: <span id="comparisons">0</span></p>
+    <p>Current Swap: <span id="swaps">None</span></p>
+    </div>
+    <div id="info-container">
+
+    <div class="card">
+        <h2 id="algo-name">Bubble Sort</h2>
+
+        <p id="description">
+            Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+        </p>
+
+        <p id="example">
+            Example: [5, 2, 4] → [2, 5, 4]
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>COMPLEXITY</h2>
+
+        <table>
+            <tr>
+                <td>Best Case</td>
+                <td id="best">O(n)</td>
+            </tr>
+
+            <tr>
+                <td>Average Case</td>
+                <td id="avg">O(n²)</td>
+            </tr>
+
+            <tr>
+                <td>Worst Case</td>
+                <td id="worst">O(n²)</td>
+            </tr>
+
+            <tr>
+                <td>Space</td>
+                <td id="space">O(1)</td>
+            </tr>
+
+            <tr>
+                <td>Stable</td>
+                <td id="stable">Yes</td>
+            </tr>
+
+            <tr>
+                <td>In Place</td>
+                <td id="inplace">Yes</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
